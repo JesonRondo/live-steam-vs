@@ -1,0 +1,18 @@
+{
+  "apps": [{
+    "name": "live-stream-vs-httpsvr",
+    "cwd": "./server",
+    "log_date_format": "YYYY-MM-DD HH:mm:ss SSS",
+    "script": "./http/index.js"
+  }, {
+    "name": "live-stream-vs-jsmpeg-svr",
+    "cwd": "./server",
+    "log_date_format": "YYYY-MM-DD HH:mm:ss SSS",
+    "script": "./jsmpeg/websocket-relay.js"
+  }, {
+    "name": "live-stream-vs-livego-svr",
+    "cwd": "./server",
+    "log_date_format": "YYYY-MM-DD HH:mm:ss SSS",
+    "script": "./livego/index.js"
+  }]
+}

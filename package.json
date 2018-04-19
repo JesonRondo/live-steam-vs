@@ -1,0 +1,29 @@
+{
+  "name": "live-stream-vs",
+  "version": "1.0.0",
+  "description": "直播方案对比",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start ./server/apps.json",
+    "restart": "pm2 restart ./server/apps.json",
+    "stop": "pm2 delete ./server/apps.json",
+    "live-mpeg:mac": "node client/end/anchor/node/mpeg.js",
+    "live-rtmp:mac": "node client/end/anchor/node/rtmp.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JesonRondo/live-stream-vs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JesonRondo/live-stream-vs/issues"
+  },
+  "homepage": "https://github.com/JesonRondo/live-stream-vs#readme",
+  "dependencies": {
+    "http-server": "^0.11.1",
+    "ws": "^5.1.1"
+  }
+}
