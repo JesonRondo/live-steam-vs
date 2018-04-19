@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>直播对比 HTTP-FLV</title>
+</head>
+<body>
+  <video autoplay id="videoElement"></video>
+  <script type="text/javascript" src="./flv.min.js"></script>
+  <script>
+    if (flvjs.isSupported()) {
+        var videoElement = document.getElementById('videoElement');
+        var flvPlayer = flvjs.createPlayer({
+          url: 'http://heyai.me:7001/live/movie.flv',
+          type: 'flv',
+          isLive: true
+        });
+        flvPlayer.attachMediaElement(videoElement);
+        flvPlayer.load();
+        flvPlayer.play();
+    }
+  </script>
+</body>
+</html>
