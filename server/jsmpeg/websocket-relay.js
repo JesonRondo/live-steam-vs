@@ -10,13 +10,13 @@ var fs = require('fs'),
 	http = require('http'),
 	WebSocket = require('ws');
 
-if (process.argv.length < 3) {
-	console.log(
-		'Usage: \n' +
-		'node websocket-relay.js <secret> [<stream-port> <websocket-port>]'
-	);
-	process.exit();
-}
+// if (process.argv.length < 3) {
+// 	console.log(
+// 		'Usage: \n' +
+// 		'node websocket-relay.js <secret> [<stream-port> <websocket-port>]'
+// 	);
+// 	process.exit();
+// }
 
 var STREAM_SECRET = process.argv[2] || 'lsvsecret',
 	STREAM_PORT = process.argv[3] || 8081,
