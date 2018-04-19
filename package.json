@@ -7,6 +7,7 @@
     "start": "pm2 start ./server/apps.json",
     "restart": "pm2 restart ./server/apps.json",
     "stop": "pm2 delete ./server/apps.json",
+    "client": "cd server && node http",
     "live-mpeg:mac": "node client/end/anchor/node/mpeg.js",
     "live-rtmp:mac": "node client/end/anchor/node/rtmp.js",
     "test": "echo \"Error: no test specified\" && exit 1"

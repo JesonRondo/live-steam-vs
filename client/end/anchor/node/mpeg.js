@@ -6,5 +6,5 @@ exec([
   'ffmpeg',
   '-f avfoundation -framerate 30 -video_size 640x480 -i "0" -vcodec libx264 -preset ultrafast -acodec libfaac',
   '-f mpegts -codec:v mpeg1video -s 640x480 -b:v 1000k -bf 0',
-  'http://127.0.0.1:8081/lsvsecret'
+  'http://heyai.me:8081/lsvsecret'
 ].join(' '), { stdio: [0, 1, 2] });

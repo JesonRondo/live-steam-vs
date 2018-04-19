@@ -16,6 +16,20 @@
 npm start
 ```
 
+#### 服务
+
+上行
+
+* `jsmpeg`: 'https://heyai.me:8081/lsvsecret'
+* `livego`: 'rtmp://heyai.me:1935/live/movie'
+
+下行
+
+* `jsmpeg`: 'wss://heyai.me:8082'
+* `rtmp`: rtmp://heyai.me:1935/live/movie
+* `flv`: http://heyai.me:7001/live/movie.flv
+* `hls`: http://heyai.me:7002/live/movie.m3u8
+
 ### 直播端
 
 如果使用 Node 直播需要安装环境
