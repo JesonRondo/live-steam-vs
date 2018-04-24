@@ -6,5 +6,6 @@
  */ 
 var exec = require('child_process').execSync;
 exec([
-  '/root/srs/trunk/objs/srs -c /root/srs/trunk/conf/http.flv.live.conf'
-].join(' '), { stdio: [0, 1, 2]});
+  'cd /root/srs/trunk',
+  './objs/srs -c conf/http.flv.live.conf'
+].join(' && '), { stdio: [0, 1, 2]});
