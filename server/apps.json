@@ -10,9 +10,9 @@
     "log_date_format": "YYYY-MM-DD HH:mm:ss SSS",
     "script": "./jsmpeg/websocket-relay.js"
   }, {
-    "name": "live-stream-vs-livego-svr",
+    "name": "live-stream-vs-rtmp-svr",
     "cwd": "./server",
     "log_date_format": "YYYY-MM-DD HH:mm:ss SSS",
-    "script": "./livego/index.js"
+    "script": "./rtmp/index.js"
   }]
 }
