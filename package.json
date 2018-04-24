@@ -9,7 +9,9 @@
     "stop": "pm2 delete ./server/apps.json",
     "client": "cd server && node http",
     "live-mpeg:mac": "node client/end/anchor/node/mpeg.js",
+    "live-mpeg:pi": "node client/end/anchor/node/mpeg.js -p pi",
     "live-rtmp:mac": "node client/end/anchor/node/rtmp.js",
+    "live-rtmp:pi": "node client/end/anchor/node/rtmp.js -p pi",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +26,7 @@
   },
   "homepage": "https://github.com/JesonRondo/live-stream-vs#readme",
   "dependencies": {
+    "args": "^4.0.0",
     "http-server": "^0.11.1",
     "ws": "^5.1.1"
   }
