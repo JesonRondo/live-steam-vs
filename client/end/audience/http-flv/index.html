@@ -15,7 +15,8 @@
         var flvPlayer = flvjs.createPlayer({
           url: 'https://heyai.me/rtmplive/live/livestream.flv',
           type: 'flv',
-          isLive: true
+          isLive: true,
+          hasAudio: false
         });
         flvPlayer.attachMediaElement(videoElement);
         flvPlayer.load();
