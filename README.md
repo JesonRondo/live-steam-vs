@@ -38,8 +38,8 @@ npm start
 
 ### jsmpeg
 
-![jsmpeg](./assets/jsmpeg.git)
+![jsmpeg](./assets/jsmpeg.gif)
 
 ### http-flv
 
-![httpflv](./assets/httpflv.git)
+![httpflv](./assets/httpflv.gif)
